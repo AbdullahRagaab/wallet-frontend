@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900;
+  font-family: 'Inter', sans-serif;
+}
+
+html.dark body {
+  @apply bg-slate-900 text-slate-50;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
