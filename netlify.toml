@@ -2,8 +2,9 @@
   command = "npm run build"
   publish = "dist"
   functions = "netlify/functions"
+  base = ""
 
-[context.production.environment]
+[build.environment]
   NODE_VERSION = "20"
   NPM_VERSION = "10"
 
