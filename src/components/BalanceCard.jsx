@@ -6,6 +6,6 @@ const BalanceCard = ({ balance = 0, currency = 'USD' }) => (
     </p>
   </div>
 );
-
+// add
 export default BalanceCard;
 
