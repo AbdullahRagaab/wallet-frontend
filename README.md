@@ -1,20 +1,20 @@
-# 💳 Digital Wallet Project (React + MockAPI)
+# 💳 Digital Wallet Project (React + Node.js + MongoDB)
 
-**A secure, responsive digital wallet application built with React, Tailwind CSS, and MockAPI.  
+**A secure, responsive digital wallet application built with React, Tailwind CSS, Node.js (Express), and MongoDB.  
 Supports user authentication, account management, transaction history, and balance tracking.**
 
 ---
 
 ## 1. 🔐 Authentication & Authorization
 
-* **JWT-based Authentication (Mocked)**
-  * Issue **Access** & **Refresh Tokens** via MockAPI.
-  * Refresh tokens enable silent re-login using React Query.
+* **JWT-based Authentication**
+  * Issue **Access** & **Refresh Tokens**.
+  * Silent re-authentication with refresh tokens.
 * **Protected Routes**
   * Only authenticated users can access Wallet Dashboard, Transactions, and Profile pages.
 * **Role & Permissions**
   * Standard users: access only their wallet & transactions.
-  * Admins: full system access (if implemented).
+  * Admins: full system access.
 * **Frontend Handling**
   * Zustand for global auth state.
   * Redirect to login if user is unauthenticated.
@@ -24,14 +24,14 @@ Supports user authentication, account management, transaction history, and balan
 ## 2. 💰 Wallet Features
 
 * **Account Management**
-  * View current balance, deposit, and withdraw funds.
+  * View current balance, deposit, withdraw funds.
 * **Transaction History**
   * Record all transactions: deposit, withdrawal, transfer.
   * Filter by date, type, and amount.
 * **Fund Transfers**
-  * Transfer money to other users (mocked via MockAPI).
+  * Transfer money to other users.
 * **Notifications**
-  * Visual feedback on success/failure of transactions.
+  * Visual feedback on transaction success/failure.
 
 ---
 
@@ -55,9 +55,10 @@ Supports user authentication, account management, transaction history, and balan
   * **State Management**: Zustand  
   * **API Handling**: React Query  
   * **Forms & Validation**: React Hook Form + Zod  
-* **Mock Backend**: MockAPI.io  
-  * Resources: `/users`, `/wallets`, `/transactions`  
-  * CRUD & pagination supported  
+* **Backend**: Node.js + Express  
+  * **Database**: MongoDB  
+  * REST API for users, wallets, transactions  
+  * JWT authentication & authorization  
 * **Styling**: Tailwind CSS  
 * **Charts**: Recharts for transaction analytics
 
@@ -76,11 +77,18 @@ Supports user authentication, account management, transaction history, and balan
 ## 6. 🏁 Quick Start
 
 ---
+
 # Install dependencies
 npm install
 
-# Run app
+# Start backend server
+cd server
 npm run dev
+
+# Start frontend
+cd ../client
+npm run dev
+
 
 ---
 
