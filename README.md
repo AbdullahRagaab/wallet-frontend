@@ -75,10 +75,28 @@ Supports user authentication, account management, transaction history, and balan
 
 ## 6. 🏁 Quick Start
 
-```
-
+---
 # Install dependencies
 npm install
 
 # Run app
 npm run dev
+
+---
+
+
+<img width="1326" height="621" alt="Image" src="https://github.com/user-attachments/assets/983de170-7bc0-488b-913d-0e15ba8f64f6" />
+
+<img width="1325" height="614" alt="Image" src="https://github.com/user-attachments/assets/b8dfee66-4b0a-4b4e-97e5-f1d3b89614db" />
+
+<img width="1337" height="628" alt="Image" src="https://github.com/user-attachments/assets/24b6bb22-aa49-401a-92f5-2a6d958c4830" />
+
+<img width="1339" height="626" alt="Image" src="https://github.com/user-attachments/assets/9360f39b-8c20-42fa-97cd-5c75c523ec3b" />
+
+<img width="1341" height="626" alt="Image" src="https://github.com/user-attachments/assets/d720dbcf-77b8-4a75-acfb-ebee1ff70222" />
+
+<img width="1340" height="626" alt="Image" src="https://github.com/user-attachments/assets/faecea34-f9a5-4c93-8f00-184a02c5a97c" />
+
+<img width="1339" height="628" alt="Image" src="https://github.com/user-attachments/assets/6b7bf933-eda8-4cbc-8d6f-1f03f0b39341" />
+
+<img width="1341" height="629" alt="Image" src="https://github.com/
