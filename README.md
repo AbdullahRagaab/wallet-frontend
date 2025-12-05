@@ -1,93 +1,93 @@
 # 💳 Digital Wallet Project (React + Node.js + MongoDB)
 
-**A secure, responsive digital wallet application built with React, Tailwind CSS, Node.js (Express), and MongoDB.  
-Supports user authentication, account management, transaction history, and balance tracking.**
+**A full-stack digital wallet application with secure authentication, transaction management, and modern responsive UI.  
+Built with React, Node.js, Express, and MongoDB.**
 
 ---
 
-## 1. 🔐 Authentication & Authorization
+## 🖥️ Frontend (Client)
 
-* **JWT-based Authentication**
-  * Issue **Access** & **Refresh Tokens**.
-  * Silent re-authentication with refresh tokens.
-* **Protected Routes**
-  * Only authenticated users can access Wallet Dashboard, Transactions, and Profile pages.
-* **Role & Permissions**
-  * Standard users: access only their wallet & transactions.
-  * Admins: full system access.
-* **Frontend Handling**
-  * Zustand for global auth state.
-  * Redirect to login if user is unauthenticated.
+**Technologies Used:**
+- React 18 + TypeScript
+- React Router DOM v6
+- Zustand (State Management)
+- Axios (HTTP Requests)
+- JWT Authentication (`jwt-decode`)
+- Tailwind CSS + PostCSS + Autoprefixer (Styling)
+- Vite (Build Tool)
+- ESLint + eslint-plugin-react (Linting)
+- clsx (Utility class management)
 
----
-
-## 2. 💰 Wallet Features
-
-* **Account Management**
-  * View current balance, deposit, withdraw funds.
-* **Transaction History**
-  * Record all transactions: deposit, withdrawal, transfer.
-  * Filter by date, type, and amount.
-* **Fund Transfers**
-  * Transfer money to other users.
-* **Notifications**
-  * Visual feedback on transaction success/failure.
 
 ---
 
-## 3. 🖥️ Frontend UX/UI
 
-* **Modern Responsive Design**
-  * React + Tailwind CSS  
-  * Mobile-first & desktop-ready
-* **Interactive Components**
-  * Modals for deposit/withdraw  
-  * Filters & selects for transaction types
-* **Optimized Workflow**
-  * Clear wallet overview  
-  * Quick transaction actions
+## ⚙️ Backend (Server)
 
----
-
-## 4. ⚙️ Technical Stack
-
-* **Frontend**: React + TypeScript  
-  * **State Management**: Zustand  
-  * **API Handling**: React Query  
-  * **Forms & Validation**: React Hook Form + Zod  
-* **Backend**: Node.js + Express  
-  * **Database**: MongoDB  
-  * REST API for users, wallets, transactions  
-  * JWT authentication & authorization  
-* **Styling**: Tailwind CSS  
-* **Charts**: Recharts for transaction analytics
+**Technologies Used:**
+- Node.js + Express
+- MongoDB with Mongoose
+- bcryptjs (Password Hashing)
+- jsonwebtoken (JWT Auth)
+- Helmet (Security Headers)
+- CORS (Cross-Origin Requests)
+- express-rate-limit (Rate Limiting)
+- validator.js (Validation)
+- Morgan (Logging)
+- dotenv (Environment Variables)
+- Nodemon + ESLint (Dev Tools)
 
 ---
 
-## 5. 📊 Analytics & Reporting
+## 🔐 Authentication & Authorization
 
-* **Balance Overview**
-  * Display total balance and recent transactions.
-* **Transaction Stats**
-  * Filterable by type and date range.
-  * Visual charts (Pie/Bar) for deposits vs withdrawals.
-
----
-
-## 6. 🏁 Quick Start
+- JWT-based authentication (Access + Refresh tokens)
+- Role-based access: `user` vs `admin`
+- Protected routes for sensitive pages
+- Users can only access/edit their own data
+- Admins can manage all users & transactions
 
 ---
 
-# Install dependencies
-npm install
+## 💳 Wallet & Transactions
 
-# Start backend server
-cd server
-npm run dev
+- Users can add, view, update, and delete wallet transactions
+- **Transaction attributes:**
+  - `amount`
+  - `type` (`income` / `expense`)
+  - `category`
+  - `date`
+  - `description`
+- Balance automatically calculated
+- CRUD operations via backend API
 
-# Start frontend
-cd ../client
-npm run dev
+---
+
+## 📊 Dashboard & Analytics
+
+- Transaction history table
+- Total income vs total expenses
+- Charts for visual insights (optional: Recharts or Chart.js)
+- Filter transactions by date, category, or type
+
+---
+
+## 👥 Users & Profiles
+
+- User profile management (`full_name`, `email`, `username`, `profile_picture`)
+- Password hashing with bcryptjs
+- JWT authentication for secure sessions
+- Admin panel to manage all users
+
+---
+
+## 🖌️ UI / UX
+
+- Modern, responsive design (mobile & desktop)
+- Tailwind CSS for fast styling
+- Interactive components: modals, forms, select dropdowns
+- Clear navigation with React Router v6
+- Status indicators and interactive elements for better workflow
 
 
 ---
