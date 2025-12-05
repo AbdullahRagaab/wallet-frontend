@@ -1,0 +1,84 @@
+# 💳 Digital Wallet Project (React + MockAPI)
+
+**A secure, responsive digital wallet application built with React, Tailwind CSS, and MockAPI.  
+Supports user authentication, account management, transaction history, and balance tracking.**
+
+---
+
+## 1. 🔐 Authentication & Authorization
+
+* **JWT-based Authentication (Mocked)**
+  * Issue **Access** & **Refresh Tokens** via MockAPI.
+  * Refresh tokens enable silent re-login using React Query.
+* **Protected Routes**
+  * Only authenticated users can access Wallet Dashboard, Transactions, and Profile pages.
+* **Role & Permissions**
+  * Standard users: access only their wallet & transactions.
+  * Admins: full system access (if implemented).
+* **Frontend Handling**
+  * Zustand for global auth state.
+  * Redirect to login if user is unauthenticated.
+
+---
+
+## 2. 💰 Wallet Features
+
+* **Account Management**
+  * View current balance, deposit, and withdraw funds.
+* **Transaction History**
+  * Record all transactions: deposit, withdrawal, transfer.
+  * Filter by date, type, and amount.
+* **Fund Transfers**
+  * Transfer money to other users (mocked via MockAPI).
+* **Notifications**
+  * Visual feedback on success/failure of transactions.
+
+---
+
+## 3. 🖥️ Frontend UX/UI
+
+* **Modern Responsive Design**
+  * React + Tailwind CSS  
+  * Mobile-first & desktop-ready
+* **Interactive Components**
+  * Modals for deposit/withdraw  
+  * Filters & selects for transaction types
+* **Optimized Workflow**
+  * Clear wallet overview  
+  * Quick transaction actions
+
+---
+
+## 4. ⚙️ Technical Stack
+
+* **Frontend**: React + TypeScript  
+  * **State Management**: Zustand  
+  * **API Handling**: React Query  
+  * **Forms & Validation**: React Hook Form + Zod  
+* **Mock Backend**: MockAPI.io  
+  * Resources: `/users`, `/wallets`, `/transactions`  
+  * CRUD & pagination supported  
+* **Styling**: Tailwind CSS  
+* **Charts**: Recharts for transaction analytics
+
+---
+
+## 5. 📊 Analytics & Reporting
+
+* **Balance Overview**
+  * Display total balance and recent transactions.
+* **Transaction Stats**
+  * Filterable by type and date range.
+  * Visual charts (Pie/Bar) for deposits vs withdrawals.
+
+---
+
+## 6. 🏁 Quick Start
+
+```
+
+# Install dependencies
+npm install
+
+# Run app
+npm run dev
